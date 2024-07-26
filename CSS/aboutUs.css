@@ -1,0 +1,230 @@
+@charset "UTF-8";
+
+*{
+    margin: auto;
+}
+
+body{
+    
+    background-color: #3939390c;
+}
+
+
+/* heading */
+h1{
+    background-color: #FFFBE9;
+    padding: 50px;
+    font-size: 3em;
+    color: rgba(35, 34, 34, 0.808);
+}
+
+h2{
+    text-align: center;
+    font-size: 2em;    
+   
+}
+
+h3{
+    text-align: center;
+    font-size: 1.6em;
+    margin-bottom: 15px ; 
+}
+
+/* section 1 - about us*/
+img{
+    height: 500x;
+    width: 500px;
+    border-radius: 12px; 
+    margin:50px 10px 50px;
+}
+
+
+.about{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.aboutUS{
+    font-size: 1.2em;
+    margin-left: 15px;
+    line-height: 30px;
+}
+
+@media only screen and (max-width:1024px){
+    .aboutUS{
+        font-size: 1em;
+        margin-left: 15px;
+        line-height: 25px;
+    }
+
+}
+
+/* addition section Awards */
+@media only screen and (max-width:1024px){    
+    .awardlist{
+        margin: 75px !important;
+    }
+}
+
+.awards img{
+    height: 600x;
+    width: 600px;
+    border-radius: 12px; 
+    margin:50px 10px 50px;
+}
+
+.awards{
+    display: flex;
+}
+
+.awardlist{
+    margin: 125px 250px 75px;
+}
+
+
+.awardlist h3{
+    text-align: center;
+    font-size: 1.6em;
+    margin-bottom: 15px ; 
+}
+
+table#awards {
+    border: 1px solid black;
+    margin-top: 25px;
+    margin-bottom: 35px;
+ }
+ 
+ table#awards td {
+    padding: 6px;
+    vertical-align: top;
+    border-bottom: 1px solid rgba(0,0,0,0.3);   
+ }
+ 
+
+/* section 2 - steps */
+.steps{
+    border: 1px solid black;
+    margin: auto;
+}
+
+.simplestep{
+    text-align: center;
+    font-size: 1.5em;
+    color: #282344;
+    margin:60px 100px 15px;
+}
+
+/* section 2 photos */
+.steps img{
+    width: 185px;
+    height: 180px;
+}
+
+.col{
+    display: flex;
+    margin: 20px;
+    text-align: center;
+    align-items: center;
+    font-size: 1.1em;
+}
+
+.col p{
+    margin: 10px 0px;
+}
+
+/* order */
+.order{
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.order a{
+    display: inline-block;
+    background-color: #f1817b;
+    color: rgb(36, 36, 36);
+    
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 25px;
+    border-radius: 20px;
+
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+.order a:hover{
+    background-color: #f1817b;
+    letter-spacing: 3px;
+    transition: 0.5s;
+}
+
+/* section 3 - customer review*/
+.reviewTitle{
+    font-size: 1.5em;
+    color: #282344;
+    margin:80px 100px 30px;
+}
+
+
+/* customer review */
+.cusrow{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cuscol{
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.customer{
+  background: #fff ;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 30px;
+  line-height: 25px;
+  margin-bottom: 20px;
+  
+}
+
+.customer img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+img#rbc{
+    border-radius: 0px;
+    height: 50px;
+    width: 100px;
+    margin-top: -20px;    
+}
+
+.name{
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+/* rate star */
+.checked {
+    color: orange;
+    margin-bottom: 10px;
+  }
+
+/* value */
+.value h2{
+    margin-bottom: 25px;
+    /* font-size: 1.6em; */
+}
+
+.value{
+    background-color: rgba(100, 100, 100, 0.6);
+    padding: 50px;
+    margin-top: 80px;
+    line-height: 25px;
+    font-size: 1.1em;
+}

@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+/* whole body */
+body{  
+   margin: auto;
+    text-align: center;
+}
+
+/* header */
+header{
+    background-color: #FFF3C3;
+    background-size: auto;
+    padding: 15px;
+}
+
+img.logo{
+    width: 70px;
+    height: 70px;
+    float: left;
+    margin-top: -7px;
+    margin-left: 30px;
+    border-radius: 50px;
+}
+
+#ordernow{
+    background-color: #66cc66;
+    border-radius: 70px;
+}
+
+#ordernow a{
+    color: #090808;
+}
+
+nav{
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    text-align: right;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 5px;
+    list-style: none;
+}
+
+nav ul li a{
+font-size: 16px;
+font-weight: 500;
+color: #919185;
+padding:  7px 13px;
+text-decoration: none;
+text-transform: uppercase;
+}
+
+nav ul li a.active, nav ul li a:hover{
+    color: #090808;
+    -webkit-transition: 0.5s;
+    transition: .5s;
+    font-size: 1.3em;
+}
+
+
+
+/* decoration for menu */
+.menu{
+    background-size: 100%;
+    padding: 150px ;
+    color:white;
+    background-image: url(../background/menubackground1.jpg);
+    font-size: 80px;
+    background-repeat: no-repeat;
+}
+
+
+/* decoration for each catogory */
+h3{
+    background-size: 100%;
+    background-repeat: no-repeat;
+	padding: 150px ;
+    margin-bottom: 10px;
+    font-size: 25px;
+    opacity: 0.5;
+    font-weight: bold
+}
+
+
+/* decoration for hyperlink */
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: rgb(229, 244, 61);
+}
+
+
+/* put image for each category */
+h3#chops{
+	background-image: url(../background/chopsbackground1.jpg);
+}
+
+h3#spaghetti{
+	background-image: url(../background/spaghettibackground1.jpg);
+}
+
+h3#dessert{
+	background-image: url(../background/dessertbackground1.jpg);
+}
+
+h3#beverage{
+    background-image: url(../background/beveragebackground1.jpg);
+
+}
+
+h3#ordernow{
+    background-image: url(../background/ordernowbackground1.jpg);
+
+}

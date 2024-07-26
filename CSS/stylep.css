@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+}
+
+.body{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(img1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.heading{
+    width: 20%;
+    text-align: center;
+    color: #fff;
+}
+
+.heading h1{
+    font-size: 40px;
+    margin: 1px;
+}
+
+.heading p{
+    padding: 1px;
+    margin: 1px;
+}
+
+.promote{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.food{
+    display: inline;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.food h2{
+    color: red;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    padding: 30px 30px;
+    background-color: #000;
+}
+
+.food a{
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 12px;
+    padding: 12px 30px;
+    background-color: #fff;
+}
+
+/* for the button when point */
+.food a:hover{
+    background-color: #000;
+    letter-spacing: 3px;
+    transition: 0.6s;
+}

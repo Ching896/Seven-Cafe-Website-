@@ -1,0 +1,586 @@
+@charset "UTF-8";
+
+html{
+    height: 100%;
+    background-color: whitesmoke;
+}
+
+/* for food-container and cart */
+.container{
+    max-width: 1000px; 
+    margin: auto;
+    padding: 20px; 
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    overflow: hidden;
+}
+
+/* for food-container only */
+#food-container{
+    background: whitesmoked;
+    overflow: scroll;
+    overflow-x: hidden;
+    box-sizing: content-box;
+}
+
+#food-items{
+    background: whitesmoke;
+    overflow: auto;
+    height: calc(100vh - 149px);
+}
+
+/* for cart only */
+#cart{
+    background: whitesmoke;
+    padding-right: 30px;
+    overflow-y: scroll;
+}
+
+/* posotion for header */
+#header{
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+/* for button */
+button {
+    margin: 0 16px;
+    border: 1px solid crimson;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+.util button{
+    display: flex;
+    cursor: pointer;
+}
+
+.util button span {
+    padding-top: 9px;
+    padding-left: 10px;
+}
+
+.util .cart-image, .cart-image{
+    margin: 5px 0;
+    margin-top: 5px;
+    color: crimson;
+    border-radius: 50%;
+    width: 25px;
+}
+
+/* design for each food title */
+#category-name{
+    margin: 10px;
+    font-size: 35px;   
+    color: coral;
+}
+
+/* design for word of quick access */
+.item-menu{
+    margin: 0;
+    font-size: 30px;
+    margin-top: 40px;
+    color: indianred;
+    background: whitesmoke;    
+}
+.item-menu{
+    margin: 0;
+    font-size: 30px;
+    margin-top: 40px;
+    color: indianred;
+    background: whitesmoke;    
+}
+
+/* for star and plus img */
+#card-top img[src="/originalphoto/star.png"]{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0px;
+    padding: 3px;
+}
+
+#card-top img[src="/originalphoto/plus.png"]{
+    width: 15px;
+    height: 15px;
+    padding: 6px;
+    margin: unset;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+}
+
+#card-top img[src="/originalphoto/plus.png"]:hover{
+    background-color: rgb(255, 153, 0);
+}
+
+#card-top span {
+    width: 100%;
+    padding-left: 5px;
+    align-self: center;
+}
+
+/* Before click the cart no need display the item added into cart and checkout */
+.food-items{
+    display: none;
+}
+
+.cart-toggle{
+    display: block;
+}
+
+
+/* Before click art the food-container part*/
+#chops,#spaghetti,#dessert,#beverage{
+    margin-top: 40px;   
+}
+
+#spaghetti #item-card{
+    background: rgb(218, 253, 188);
+}
+
+#dessert #item-card{
+    background: rgb(221, 243, 243);
+}
+
+#beverage #item-card{
+    background: rgb(238, 240, 168);
+}
+
+#card-top{
+    display: flex;
+    margin: 5px 0;
+    justify-content: space-between;
+}
+
+#item-card{
+    width: 180px;
+    height: 220px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    background: rgb(253, 221, 226);
+    transition: 0.5s all step-end;
+}
+
+#item-card:hover img{
+    transform: scale(1.2);
+}
+
+#item-card img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+    margin-bottom: 15px;
+    transition: 0.5s all ease-in-out;
+}
+
+#item-name{
+    margin: 5px 0;
+    font-weight: 600;
+    color: darkslategray;
+    font-size: 18px;
+}
+
+#item-price{
+    margin: 0;
+    color: rgb(2, 27, 27);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+/* after click cart the food-container part */
+.food-items{
+    display: none;
+}
+
+.cart-toggle{
+    display: none;
+}
+
+#cart-page{
+    background: white;
+    margin: 40px 10px;
+    margin-right: 50px;
+    padding: 20px 30px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+
+#cart-title{
+    font-size: 35px;
+    margin: 0;
+    color: indianred;
+}
+
+#cart-page table{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#cart-page table thead td{
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+#cart-page table tbody td{
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+#cart-page table tbody button{
+    outline: none;
+    border: none;
+    font-size: 16px;
+    background: none;
+    background: lightcoral;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+#cart-page table tbody img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+
+/* before click card the cart part */
+.list-card{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+
+.list-card:hover{
+    background: rgb(255, 216, 222);
+}
+
+.list-card:hover img{
+    transition: 0.5s all ease-in-out;
+    transform: scale(1.2);
+}
+
+.list-card img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.list-name{
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgb(94, 43, 43);
+}
+
+/* after click the cart the cart part */
+.cart-btn{
+    outline: none;
+    border: none;
+    background: crimson;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    bottom: 30px;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.cart-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.m-cart-button{
+    display: none;
+}
+
+#checkout{
+    text-align: center;
+    margin: 40px auto;
+    border-radius: 5px;
+    background: white;
+    padding: 10px 20px;
+}
+
+#checkout p{
+    margin: 15px 0;
+    float: left;
+}
+
+#total-price,#total-item{
+    font-size: 25px;
+    color: indianred;
+}
+
+#mobile-view{
+    display: none;
+}
+
+#chops{
+    margin-top: 10px;
+}
+
+#m-total-amount{
+    display: none;
+}
+
+@media screen and (max-width : 800px) and (-webkit-min-device-pixel-ratio: 2){
+
+    .container{
+        display: none;
+    }
+
+    #mobile-view{
+        display: grid;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .mobile-top{
+        padding: 5px 15px;
+        background: white;
+        z-index: 1;
+    }
+
+    .top-menu button{
+        display: flex;
+    }
+
+    .top-menu button span{
+        align-self: center;
+        padding-left: 8px;
+    }
+
+    .item-container{
+        overflow-y: scroll;
+    }
+    
+    .m-cart-toggle{
+        color: white;
+        background: lightcoral;
+    }
+
+    .category-header{
+        display: flex;
+        overflow-x: scroll;
+        position: sticky;
+        top: 0;
+        background: white;
+        z-index: 1;
+        border-bottom: 1px solid rgb(219, 219, 219);
+        margin: 0;
+        transform: translateZ(0);
+        -webkit-transform: translateZ(0);
+        padding-top: 20px;
+        padding-left: 15px;
+    }
+
+    .toggle-category{
+        display: none;
+        position: relative;
+    }
+
+    .list-card{
+        margin: 0 10px;
+        text-align: center;
+    }
+
+    .list-card img{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+
+    .list-card:hover{
+        background: none;
+    }
+
+    .list-card:hover img{
+        transform: none;
+        transition: none;
+    }
+
+    .list-name{
+        margin: 5px 0;
+        color: coral;
+        width: max-content;
+        font-size: 16px;
+    }
+
+    #food-items{        
+        padding: 5px 10px;
+    }
+
+    .mobile-footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 15px;
+        background: white;
+        border-top: 1px solid rgb(219, 219, 219);
+    }
+
+    .mobile-footer{
+        color: indianred;
+        text-transform: uppercase;
+        font-size: 16px;
+        position: static;
+    }
+
+    #category-name{
+        font-size: 25px;
+        font-family: 'Aclonica', sans-serif;
+    }
+
+    #item-card{
+        width: 150px;
+        height: 200px;
+    }
+
+    #item-card img{
+        width: 100px;
+        height: 100px;
+    }
+
+    #item-name,#item-price{
+        font-size: 16px;
+    }
+    .list-card{
+        flex-direction: column;
+    }
+
+    #cart-page{
+        margin: 3px 0;
+        padding: 10px 5px;
+        padding-bottom: 30px;
+        border-top: 1px solid rgb(219, 219, 219);
+    }
+
+    #cart-page table thead td{
+        font-size: 20px;
+    }
+
+    #cart-page table tbody td{
+        font-size: 18px;
+    }
+
+    #cart-page table tbody img{
+        width: 60px;
+        height: 60px;
+    }
+
+    #cart-title{
+        font-size: 25px;
+        display: inline-block;
+        font-family: 'Aclonica', sans-serif;
+    }
+
+    #m-total-amount{
+        display: inline-block;
+        color: lightcoral;
+        padding: 5px 10px;
+        margin: 0;
+        border:  1px solid lightcoral;
+        float: none;
+    }
+
+    .m-cart-button{
+        display: flex;
+        justify-content: center;
+    }
+
+    .m-cart-button button{
+        margin: unset;
+    }
+}
+
+@media screen and (max-width : 400px) and (-webkit-min-device-pixel-ratio: 2){
+    #mobile-view{
+        min-height: -webkit-fill-available;
+    }
+
+    #item-card{
+        height: 200px;
+        width: 140px;
+    }
+    
+    #food-items{
+        padding: 0;
+    }
+}
+
+
+/* header */
+header{
+    background-color: #FFF3C3;
+    background-size: auto;
+    padding: 15px;
+}
+
+img.logo{
+    width: 70px;
+    height: 70px;
+    float: left;
+    margin-top: -7px;
+    margin-left: 30px;
+    border-radius: 50px;
+}
+
+#ordernow{
+    background-color: #66cc66;
+    border-radius: 70px;
+}
+
+#ordernow a{
+    color: #090808;
+}
+
+nav{
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    text-align: right;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 5px;
+    list-style: none;
+}
+
+nav ul li a{
+font-size: 16px;
+font-weight: 500;
+color: #919185;
+padding:  7px 13px;
+text-decoration: none;
+text-transform: uppercase;
+}
+
+nav ul li a.active, nav ul li a:hover{
+    color: #090808;
+    -webkit-transition: 0.5s;
+    transition: .5s;
+    font-size: 1.3em;
+}

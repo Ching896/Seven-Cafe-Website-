@@ -1,0 +1,285 @@
+@charset "UTF-8";
+
+* {
+  margin: auto;
+}
+
+/* Welcome section */
+#welcome {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  text-align: center;
+  font-size: 2em;
+  margin: 45px;
+  word-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: rgb(253, 215, 221);
+}
+
+/* welcome text (about us) */
+.textslide {
+  margin-bottom: 35px;
+  text-align: center;
+  font-size: 2em;
+  margin: 45px;
+  word-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: rgb(253, 215, 221);
+}
+
+/* menu section */
+.container-menu {
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+
+.ourtext {
+  text-align: center;
+  font-size: 1.5em;
+  word-spacing: 5px;
+}
+
+.menu1 {
+  position: relative;
+}
+
+.image {
+  opacity: 0.5;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.ftext {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.menu1:hover .image {
+  opacity: 0.3;
+}
+
+.menu1:hover .ftext {
+  opacity: 1;
+}
+
+.text {
+  background-color: #3c3c37;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.text a {
+  text-decoration: none;
+  color: red;
+  border-radius: 20px;
+  border-color: aliceblue;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.menu img {
+  width: 300px;
+  height: 285px;
+  box-sizing: border-box;
+  padding: 15px;
+  opacity: 1;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.up,
+.down {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* promotion */
+.container-promotion {
+  margin: 75px;
+}
+
+.promotion,
+.event,
+.aboutus {
+  text-align: center;
+  font-size: 1.2em;
+  margin: 50px;
+}
+
+.descript {
+  margin-top: 15px;
+  line-height: 50px;
+}
+
+.descript a {
+  text-decoration: none;
+  color: rgb(237, 72, 100);
+}
+
+.descript a:hover {
+  background-color: rgb(237, 72, 100);
+  color: rgb(242, 255, 2);
+  transition: .6s;
+  font-size: 1.5em;
+}
+
+#linkPromo {
+  color: rgb(99, 106, 144);
+}
+
+
+/* event section */
+.textslide-event {
+  margin-bottom: 35px;
+  text-align: center;
+  font-size: 1em;
+  margin-top: 35px;
+  word-spacing: 5px;
+  max-width: 500px;
+  max-height: 600px;
+  border: 1px solid;
+  padding: 15px;
+}
+
+.click a {
+  text-decoration: none;
+  font-size: 1.3em;
+  color: rgb(240, 153, 167);
+}
+
+.click a:hover {
+  color: rgb(237, 72, 100);
+  transition: .6s;
+  font-size: 1.7em;
+}
+
+.click {
+  position: relative;
+  animation-name: clickme;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes clickme {
+  0% {
+    left: -100px;
+  }
+
+  25% {
+    left: 100px;
+  }
+
+  50% {
+    left: -100px;
+  }
+
+  75% {
+    left: 100px;
+  }
+
+  100% {
+    left: -100px;
+  }
+}
+
+.event {
+  margin: 75px 0px;
+}
+
+/* catering */
+.container-catering h2 {
+  margin: 75px 0px 15px;
+}
+
+.catering {
+  margin: 45px;
+  line-height: 45px;
+  letter-spacing: 1.5px;
+  align-items: center;
+}
+
+.catering a {
+  text-decoration: none;
+  font-size: 1.3em;
+  color: rgb(240, 153, 167);
+}
+
+.catering a:hover {
+  color: rgb(237, 72, 100);
+  transition: .6s;
+  font-size: 1.7em;
+}
+
+/* about us */
+.container-us {
+  display: flex;
+  flex-direction: row;
+  text-align: justify;
+  line-height: 30px;
+}
+
+.abouttext a {
+  text-decoration: none;
+  color: black;
+  border: 0.5px solid black;
+  padding: 10px;
+  background-color: rgb(220, 211, 199);
+  border-radius: 20px;
+}
+
+.abouttext {
+  margin-left: 35px;
+  font-size: 1em;
+}
+
+.imgaboutus img {
+  border-radius: 10px;
+}
+
+
+/* chef section*/
+.ourchef {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 75px;
+  margin-top: 75px;
+}
+
+.chefs {
+  display: flex;
+  justify-content: center;
+  margin-top: 55px;
+}
+
+.chef img {
+  width: 300px;
+  height: 300px;
+}
+
+.chef {
+  background-color: white;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1), 0 4px 18px 0 rgba(0, 0, 0, 0.15);
+  margin-bottom: 40px;
+}
+
+.imgtext {
+  padding: 15px;
+}
