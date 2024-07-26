@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SEVEN CAFE</title>
+    <link href="./../CSS/global.css" rel="stylesheet" />
+    <link href="./../CSS/homepage.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./../CSS/footer.css" />
+
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <nav>
+            <a href="./homepage.html" class="logo"><img src="./../photo/SEVENlogo.png" alt="logo" class="logo" /></a>
+            <ul>
+                <li><a href="./menu.html" class="active">Menu</a></li>
+                <li><a href="./about_us.html">About Us</a></li>
+                <li><a href="./promotion.html">Promotion</a></li>
+                <li><a href="./events.html">Event</a></li>
+                <li><a href="./Catering.html">Catering</a></li>
+                <li><a href="./career.html">Career Center</a></li>
+                <li id="ordernow"><a href="./ordernow.html"><strong>Order Now</strong></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- homepage banner -->
+    <section class="banner">
+        <div class="bannerslides" style="width: fit-content">
+            <img class="slides" src="./../photo/slide1.jpg" style="width: 100%" />
+            <img class="slides" src="./../photo/slide2.jpg" style="width: 100%" />
+            <img class="slides" src="./../photo/slide3.jpg" style="width: 100%" />
+            <img class="slides" src="./../photo/takingchips.jpg" style="width: 100%" />
+        </div>
+
+        <script>
+            var myIndex = 0;
+            bannerslide();
+            function bannerslide() {
+                var i;
+                var x = document.getElementsByClassName("slides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1;
+                }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(bannerslide, 3500); // Change image every 3 seconds
+            }
+        </script>
+    </section>
+
+    <!-- homepage welcome text -->
+    <section class="welcome">
+        <div class="container">
+            <!-- slides -->
+            <div class="textslide">
+                <div class="welcomeslide">
+                    <h2><b>Welcome To SEVEN Cafe</b></h2>
+                </div>
+
+                <div class="welcomeslide">
+                    <h2><b>Welcome To SEVEN Cafe</b></h2>
+                </div>
+
+                <div class="welcomeslide">
+                    <h2><b>HUNGRY ?</b></h2>
+                </div>
+
+                <div class="welcomeslide">
+                    <h2><b>STARVING ??</b></h2>
+                </div>
+
+                <div class="welcomeslide">
+                    <h2><b>wanna EAT something ??!</b></h2>
+                </div>
+
+                <div class="welcomeslide">
+                    <h2><b>Look at our HOTS MENU !!!</b></h2>
+                </div>
+
+                <div class="welcomeslide">
+                    <h2><b>Grabs yours today !</b></h2>
+                </div>
+
+                <div class="welcomeslide">
+                    <h2><b>- SEVEN CAFE -</b></h2>
+                </div>
+
+                <div class="welcomeslide">
+                    <h2><b>1st choice always</b></h2>
+                </div>
+
+                <div class="welcomeslide">
+                    <h2><b> &#x2728; ENJOY &#x2728;</b></h2>
+                </div>
+            </div>
+
+            <!-- js for slide -->
+            <script>
+                var slideIndex = 0;
+                slides();
+
+                function slides() {
+                    var i;
+                    var x = document.getElementsByClassName("welcomeslide");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > x.length) {
+                        slideIndex = 1;
+                    }
+                    x[slideIndex - 1].style.display = "block";
+                    setTimeout(slides, 2500);
+                }
+            </script>
+        </div>
+    </section>
+
+    <!-- section Menu -->
+    <section class="ourmenu">
+        <div class="container-menu">
+            <div class="ourtext">
+                <h2>- SEVEN's <span style="color: orange">Hots</span> Menu -</h2>
+            </div>
+
+            <div class="menu">
+                <div class="up">
+                    <div class="menu1">
+                        <img class="image" src="./../photo/Spaghetti Bolognese.png" alt="" />
+                        <div class="ftext">
+                            <div class="text">
+                                Spaghetti Bolognese<br /><a href="./menu.html"><strong style="letter-spacing: 1px">Read
+                                        More</strong></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu1">
+                        <img class="image" src="./../photo/Spaghetti Seafood Delight.png" alt="" />
+                        <div class="ftext">
+                            <div class="text">
+                                Spaghetti Seafood Delight<br /><a href="./menu.html"><strong
+                                        style="letter-spacing: 1px">Read
+                                        More</strong></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu1">
+                        <img class="image" src="./../photo/Crispy Chicken Chop.png" alt="" />
+                        <div class="ftext">
+                            <div class="text">
+                                Crispy Chicken Chop<br /><a href="./menu.html"><strong style="letter-spacing: 1px">Read
+                                        More</strong></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="down">
+                    <div class="menu1">
+                        <img class="image" src="./../photo/Grilled Salmon Steak.png" alt="" />
+                        <div class="ftext">
+                            <div class="text">
+                                Grilled Salmon Steak<br /><a href="./menu.html"><strong style="letter-spacing: 1px">Read
+                                        More</strong></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu1">
+                        <img class="image" src="./../photo/Fruit Tart.png" alt="" />
+                        <div class="ftext">
+                            <div class="text">
+                                Fruit Tart<br /><a href="./menu.html"><strong style="letter-spacing: 1px">Read
+                                        More</strong></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu1">
+                        <img class="image" src="./../photo/Fried Ice Cream.png" alt="" />
+                        <div class="ftext">
+                            <div class="text">
+                                Fried Ice Cream<br /><a href="./menu.html"><strong style="letter-spacing: 1px">Read
+                                        More</strong></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section promotion -->
+    <section class="promotion">
+        <div class="container-promotion">
+            <div class="promotion">
+                <h2><strong>- The MONTH of the Year -</strong></h2>
+                <div class="descript">
+                    <p>
+                        1, 2, 3, 4, 5, 6, 7.... Yes! Its <span>7</span><br />Enjoy special
+                        offer every <span>July</span> of each Year!!
+                    </p>
+                    <p id="linkPromo">
+                        Click here : <a href="./promotion.html">Learn More</a> To know
+                        more promotion of our cafe!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section events -->
+    <section class="event">
+        <div class="event">
+            <h2><strong>- Event -</strong></h2>
+
+            <div class="container-event">
+                <!-- slides -->
+                <div class="textslide-event">
+                    <div class="eventslide">
+                        <p>Birthday Party</p>
+                    </div>
+
+                    <div class="eventslide">
+                        <p>Annual Celebration</p>
+                    </div>
+
+                    <div class="eventslide">
+                        <p>Graduate Reunion</p>
+                    </div>
+
+                    <div class="eventslide">
+                        <p>Any Party</p>
+                    </div>
+
+                    <div class="eventslide">
+                        <p>Everything</p>
+                    </div>
+
+                    <div class="eventslide">
+                        <p>Just tell us if you need a <br />place for celebration!!</p>
+                    </div>
+
+                    <div class="eventslide">
+                        <p>Just tell us if you need a <br />place for celebration!!</p>
+                    </div>
+
+                    <div class="eventslide">
+                        <p>Where to tell ?</p>
+                    </div>
+
+                    <div class="eventslide">
+                        <p>Click 'Click Me' To explore more!!</p>
+                    </div>
+
+                    <div class="eventslide">
+                        <p>Click 'Click Me' To explore more!!</p>
+                    </div>
+                </div>
+
+                <!-- js for slide -->
+                <script>
+                    var indexSlide = 0;
+                    eventslide();
+
+                    function eventslide() {
+                        var i;
+                        var y = document.getElementsByClassName("eventslide");
+                        for (i = 0; i < y.length; i++) {
+                            y[i].style.display = "none";
+                        }
+                        indexSlide++;
+                        if (indexSlide > y.length) {
+                            indexSlide = 1;
+                        }
+                        y[indexSlide - 1].style.display = "block";
+                        setTimeout(eventslide, 2000);
+                    }
+                </script>
+
+                <div class="click">
+                    <span style="color: orange; font-size: 1.5em">&#8680;</span>
+                    <a href="./Events.html">Click Me</a><span style="color: orange; font-size: 1.5em"> &#8678;</span>
+                </div>
+            </div>
+
+            <!-- catering -->
+            <div class="container-catering">
+                <div class="catering">
+                    <h2><strong>- Catering -</strong></h2>
+                    <p>
+                        Celebrate at other places but need <span>Our Menu</span> ?<br />No
+                        worries, We also provide catering service!!
+                    </p>
+                    <p>
+                        <span style="color: orange; font-size: 1.5em">&#8680;</span>
+                        <a href="./Catering.html">Catering</a><span style="color: orange; font-size: 1.5em">
+                            &#8678;</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- section about us -->
+    <section class="aboutus">
+        <div class="aboutus">
+            <h2><strong>- About Us -</strong></h2>
+        </div>
+
+        <div class="container-us">
+            <div class="imgaboutus">
+                <img src="./../photo/homepageAboutus.jpg" alt="aboutus" width="450px" height="520px" />
+            </div>
+
+            <div class="abouttext">
+                <p>
+                    Welcome to SEVEN Cafe!<br />Founded on July 7th, 2021, SEVEN Cafe celebrates the significance of
+                    the number 7, believing it's a symbol of luck and good fortune. Our mission is to ensure our
+                    customers feel lucky seven days a week.
+                    <br>Our motto, "Cooking with Heart, Hoping You Eat Happily," reflects our
+                    dedication to creating delicious meals and drinks that bring joy.
+                    <br>Join us for coffee, brunch, or dinner, and let SEVEN Cafe make your
+                    day luckier and more enjoyable.
+                    <br>Thank you for choosing SEVEN Cafe.<br>We look forward to sharing many lucky moments with you.
+                    <br>Welcome to our world of luck and love,<br>The SEVEN Cafe Team <span
+                        style="color: red;">&#10084;</span>
+                </p>
+                <br>
+                <a href="./about_us.html">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- section chef -->
+    <section class="ourchef">
+        <h2>- Our Chefs -</h2>
+
+        <div class="chefs">
+            <div class="chef">
+                <img src="./../photo/chef1.jpg" alt="chef1" />
+                <div class="imgtext">
+                    <p>Ding Yi Feng</p>
+                </div>
+            </div>
+
+            <div class="chef">
+                <img src="./../photo/chef2.jpg" alt="chef2" />
+                <div class="imgtext">
+                    <p>Tan Yen Nan</p>
+                </div>
+            </div>
+
+            <div class="chef">
+                <img src="./../photo/chef3.jpg" alt="chef3" />
+                <div class="imgtext">
+                    <p>Muhamed Ghazali Jemadin</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="container-footer">
+            <div class="social">
+                <div class="ins">
+                    <a href="https://www.instagram.com/seven98627/">INS</a>
+                </div>
+
+                <div class="fb">
+                    <a href="https://www.facebook.com/profile.php?id=61551230584371">f</a>
+                </div>
+
+                <div class="email">
+                    <a href="Mailto:s.e.v.e.n.98627@gmail.com">&#9993;</a>
+                </div>
+
+                <div class="phoneno">
+                    <a href="tel:+601234567"> &#128222;</a>
+                </div>
+            </div>
+
+            <div class="links">
+                <div class="row1">
+                    <a href="./about_us.html">About Us</a>
+                    &nbsp;
+                    <a href="./promotion.html">Promotion</a>
+                    &nbsp;
+                    <a href="./Events.html">Events</a>
+                    &nbsp;
+                    <a href="./Catering.html">Catering</a>
+                </div>
+
+                <div class="row2">
+                    <a href="./Feedback.html">Feedback</a>
+                    &nbsp;
+                    <a href="./FAQ.html" style="color: rgb(255, 85, 85);">FAQ</a>
+                    &nbsp;
+                    <a href="./menu.html">Menu</a>
+                    &nbsp;
+                    <a href="./ordernow.html">Order Now</a>
+                    &nbsp;
+                    <a href="./Career.html">Career center</a>
+                </div>
+
+                <div class="row3">
+                    <a href="./homepage.html">- Back To Homepage -</a>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link href="./../CSS/payment2.css" rel="stylesheet">
+    <script src="./../JavaScript/payment.js" defer></script>
+
+</head>
+
+<body>
+    <img src="./../photo/payment.png" alt="Payment Image" class="payment-image">
+    <div class="container">
+        <form>
+            <div class="row">
+                <div class="col">
+                    <h3 class="title">Customer Details</h3>
+
+                    <div class="inputBox">
+                        <span>Name</span>
+                        <input type="text" placeholder="Enter Name" required />
+                    </div>
+                    <div class="inputBox">
+                        <span>Phone</span>
+                        <input type="tel" placeholder="Enter Phone Number" required />
+                    </div>
+                    <div class="inputBox">
+                        <span>Table Number</span>
+                        <input type="number" placeholder="For Dine In" />
+                    </div>
+                    <div class="inputBox">
+                        <span>Address</span>
+                        <input type="text" placeholder="For Delivery" />
+                    </div>
+                </div>
+
+                <div class="col">
+                    <h3 class="title">Payment</h3>
+                    <div class="inputBox">
+                        <span>Payment Methods</span>
+                        <img src="./../photo/card1.png">
+                        <img src="./../photo/card2.png">
+                        <img src="./../photo/card3.png">
+                    </div>
+                    <div class="inputBox">
+                        <span>Card Number</span>
+                        <input type="number" placeholder="Enter Card Number" required />
+                    </div>
+
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>Exp Month</span>
+                            <input type="number" placeholder="MM" max="12" min="1" required />
+                        </div>
+                        <div class="inputBox">
+                            <span>Exp Year</span>
+                            <input type="number" placeholder="YYYY" max="2030" min="2023" required />
+                        </div>
+                    </div>
+                    <div class="inputBox">
+                        <span>Total</span>
+                        <input id="total" disabled>
+                    </div>
+                </div>
+            </div>
+
+            <input type="submit" value="SUBMIT" class="submit-btn">
+
+        </form>
+    </div>
+</body>
+
+</html>

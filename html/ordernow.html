@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover">
+    <title>Order Now - Seven Cafe</title>
+    <link href="./../CSS/ordernow.css" rel="stylesheet" />
+    <script src="./../JavaScript/ordernow.js" type="module"></script>
+    <link rel="stylesheet" href="./../CSS/footer.css" />
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <nav>
+            <a href="./homepage.html" class="logo"><img src="./../photo/SEVENlogo.png" alt="logo" class="logo" /></a>
+            <ul>
+                <li><a href="./menu.html" class="active">Menu</a></li>
+                <li><a href="./about_us.html">About Us</a></li>
+                <li><a href="./promotion.html">Promotion</a></li>
+                <li><a href="./events.html">Event</a></li>
+                <li><a href="./Catering.html">Catering</a></li>
+                <li><a href="./career.html">Career Center</a></li>
+                <li id="ordernow"><a href="./ordernow.html"><strong>Order Now</strong></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- desktop view -->
+    <div class="container" id="container">
+        <div id="food-container">
+
+            <div id="header">
+
+                <div class="util">
+                    <button id="cart-plus"><img src="./../originalphoto/cart.png" class="cart-image"
+                            alt="cart Image"><span>0 Items</span></button>
+                </div>
+            </div>
+
+            <div id="food-items" class="d-food-items">
+
+                <div id="chops" class="d-chops">
+                    <p id="category-name">Chops</p>
+                </div>
+
+                <div id="spaghetti" class="d-spaghetti">
+                    <p id="category-name">Spaghetti</p>
+                </div>
+
+                <div id="dessert" class="d-dessert">
+                    <p id="category-name">Dessert</p>
+                </div>
+
+                <div id="beverage" class="d-beverage">
+                    <p id="category-name">Beverage</p>
+                </div>
+            </div>
+
+
+            <!-- After click cart -->
+            <!-- Display the food information added into cart -->
+            <div id="cart-page" class="cart-toggle">
+
+                <p id="cart-title">Cart Items</p>
+
+                <p id="m-total-amount">Total Amout : 100</p>
+
+                <table>
+                    <thead>
+                        <td>Item</td>
+                        <td>Name</td>
+                        <td>Quantity</td>
+                        <td>Price</td>
+                    </thead>
+                    <tbody id="table-body">
+
+                    </tbody>
+                </table>
+
+                <div class="m-cart-button">
+                    <button class="cart-btn" id="cart-btn"><a href="./payment2.html">Checkout</a></button>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="cart">
+
+            <div id="category-list">
+                <p class="item-menu">Quick Access</p>
+                <div class="border"></div>
+            </div>
+
+
+            <!-- After click cart -->
+            <!-- Display total type of food add, total proce and checkout button -->
+            <div id="checkout" class="cart-toggle">
+                <p id="total-item">Total Item : 5</p>
+                <p id="total-price"></p>
+                <button class="cart-btn" id="cart-btn"><a href="./payment2.html">Checkout</a></button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- mobile view -->
+    <div id="mobile-view" class="mobile-view">
+        <div class="mobile-top">
+
+            <div class="top-menu">
+                <button id="m-cart-plus"><img src="./../originalphoto/cart.png" class="cart-image"
+                        alt="cart Image"><span> 0 items</span></button>
+            </div>
+
+        </div>
+
+        <div class="item-container">
+
+            <div class="category-header" id="category-header"></div>
+
+            <div id="food-items" class="food-items">
+
+                <div id="chops" class="m-chops">
+                    <p id="category-name">Chops & Steak</p>
+                </div>
+
+                <div id="spaghetti" class="m-spaghetti">
+                    <p id="category-name">Spaghetti</p>
+                </div>
+
+
+                <div id="dessert" class="m-dessert">
+                    <p id="category-name">Dessert</p>
+                </div>
+
+                <div id="beverage" class="m-beverage">
+                    <p id="category-name">Beverage</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- footer -->
+    <footer>
+        <div class="container-footer">
+
+            <div class="social">
+                <div class="ins">
+                    <a href="https://www.instagram.com/seven98627/">INS</a>
+                </div>
+
+                <div class="fb">
+                    <a href="https://www.facebook.com/profile.php?id=61551230584371">f</a>
+                </div>
+
+                <div class="email">
+                    <a href="Mailto:s.e.v.e.n.98627@gmail.com">&#9993;</a>
+                </div>
+
+                <div class="phoneno">
+                    <a href="tel:+601234567"> &#128222;</a>
+                </div>
+            </div>
+
+            <div class="links">
+                <div class="row1">
+                    <a href="./about_us.html">About Us</a>
+                    &nbsp;
+                    <a href="./promotion.html">Promotion</a>
+                    &nbsp;
+                    <a href="./Events.html">Events</a>
+                    &nbsp;
+                    <a href="./Catering.html">Catering</a>
+                </div>
+
+                <div class="row2">
+                    <a href="./Feedback.html">Feedback</a>
+                    &nbsp;
+                    <a href="./FAQ.html" style="color: rgb(255, 85, 85);">FAQ</a>
+                    &nbsp;
+                    <a href="./menu.html">Menu</a>
+                    &nbsp;
+                    <a href="./ordernow.html">Order Now</a>
+                    &nbsp;
+                    <a href="./Career.html">Career center</a>
+                </div>
+
+                <div class="row3">
+                    <a href="./homepage.html">- Back To Homepage -</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

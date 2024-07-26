@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <script src="./../JavaScript/Events.js" type="text/javascript" defer></script>
+  <link rel="stylesheet" href="./../CSS/global.css" />
+  <link rel="stylesheet" href="./../CSS/Events.css" />
+  <title>Events - Seven Cafe</title>
+  <link rel="stylesheet" href="./../CSS/footer.css" />
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <nav>
+      <a href="./homepage.html" class="logo"><img src="./../photo/SEVENlogo.png" alt="logo" class="logo" /></a>
+      <ul>
+        <li><a href="./menu.html" class="active">Menu</a></li>
+        <li><a href="./about_us.html">About Us</a></li>
+        <li><a href="./promotion.html">Promotion</a></li>
+        <li><a href="./events.html">Event</a></li>
+        <li><a href="./Catering.html">Catering</a></li>
+        <li><a href="./career.html">Career Center</a></li>
+        <li id="ordernow">
+          <a href="./ordernow.html"><strong>Order Now</strong></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <header class="event">
+    <h1>Events</h1>
+  </header>
+  <div id="eventDescription">
+    <section id="birthdayEvent">
+      <h2>Birthday Celebration</h2>
+      <div>
+        <p>
+          The cafe is available for booking on your birthday week! one free
+          cake will be given as a gift from us to you!
+        </p>
+        <img src="./../Images/Birthday1.png" alt="Birthday poster" usemap="#cakemap" id="birthdayImg" />
+        <map name="cakemap">
+          <area shape="rect" coords="375, 530, 525, 670" href="#formEvent" alt="Click here to go to forms"
+            style="border: 3px black" />
+        </map>
+        <h3>Click on the cake to start your reservation!</h3>
+      </div>
+    </section>
+
+    <section id="customEvent">
+      <h2>Customizable Event</h2>
+      <div>
+        <h3>Whatever the occasion? you name it!</h3>
+        <p>
+          Our cafe provides a custom-made facility that are available to be
+          booked 1 week in advance!
+        </p>
+        <img src="./../Images/Custom1.png" alt="Custom events poster" id="customImg" />
+        <h3>
+          To make a request, submit a form with your contacts. We will reach
+          out to you!
+        </h3>
+      </div>
+    </section>
+
+    <section id="sevenEvent">
+      <h2>Seven</h2>
+      <div>
+        <h3>Lucky draw is held every day on the month of July every year!</h3>
+        <p>
+          For every RM77 spent at the cafe you are given a chance to
+          participate in our once a year lucky draw that is open for
+          registration from 1st of July until 30th of July
+        </p>
+        <ul id="event">
+          <p>Prizes include:</p>
+          <li>Iphone 15 pro max</li>
+          <li>A chosen merchandise of our shop</li>
+          <li>RM10 vouchers</li>
+        </ul>
+        <img src="./../Images/SevenEvents1.png" alt="Cafe events poster" id="sevenImg" />
+        <h3>
+          The lucky draw winners will be annouced on 31st of July at 7pm!
+        </h3>
+      </div>
+    </section>
+  </div>
+
+  <!-- Forms -->
+  <div>
+    <form name="eventForm">
+      <h2>
+        <u><strong>Event Reservations Form</strong></u>
+      </h2>
+      <div id="div1">
+        <label for="formName">Name</label>
+        <br />
+        <input type="text" id="formName" placeholder="Enter your name" autocomplete="off"/>
+        <br />
+        <label for="formTel">Phone Number</label>
+        <br />
+        <input type="tel" id="formTel" placeholder="Enter your phone number" autocomplete="off"/>
+        <br />
+        <label for="formEmail">Email</label>
+        <br />
+        <input type="email" id="formEmail" placeholder="Enter your email address" autocomplete="off"/>
+      </div>
+      <div id="div2">
+        <label for="formPax">No. of person</label>
+        <br />
+        <input type="number" id="formPax" value="" min="2" max="20" />
+        <br />
+        <label for="formDate">Date</label>
+        <br />
+        <input type="date" id="formDate" />
+        <br />
+        <label for="formEvent">Event</label>
+        <br />
+        <select id="formEvent">
+          <option>Birthday Party</option>
+          <option>Custom Party</option>
+        </select>
+        <br />
+      </div>
+      <input type="button" value="Book now" onclick="checkform()" />
+      <input type="reset" value="Clear Details" />
+    </form>
+  </div>
+
+  <!-- footer -->
+  <footer>
+    <div class="container-footer">
+      <div class="social">
+        <div class="ins">
+          <a href="https://www.instagram.com/seven98627/">INS</a>
+        </div>
+
+        <div class="fb">
+          <a href="https://www.facebook.com/profile.php?id=61551230584371">f</a>
+        </div>
+
+        <div class="email">
+          <a href="Mailto:s.e.v.e.n.98627@gmail.com">&#9993;</a>
+        </div>
+
+        <div class="phoneno">
+          <a href="tel:+601234567"> &#128222;</a>
+        </div>
+      </div>
+
+      <div class="links">
+        <div class="row1">
+          <a href="./about_us.html">About Us</a>
+          &nbsp;
+          <a href="./promotion.html">Promotion</a>
+          &nbsp;
+          <a href="./Events.html">Events</a>
+          &nbsp;
+          <a href="./Catering.html">Catering</a>
+        </div>
+
+        <div class="row2">
+          <a href="./Feedback.html">Feedback</a>
+          &nbsp;
+          <a href="./FAQ.html" style="color: rgb(255, 85, 85)">FAQ</a>
+          &nbsp;
+          <a href="./menu.html">Menu</a>
+          &nbsp;
+          <a href="./ordernow.html">Order Now</a>
+          &nbsp;
+          <a href="./Career.html">Career center</a>
+        </div>
+
+        <div class="row3">
+          <a href="./homepage.html">- Back To Homepage -</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

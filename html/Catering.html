@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./../CSS/Catering.css" />
+    <title>Seven Cafe Catering Booking</title>
+    <script src="./../JavaScript/Catering.js" defer></script>
+    <link rel="stylesheet" href="./../CSS/footer.css" />
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <nav>
+            <a href="./homepage.html" class="logo"><img src="./../photo/SEVENlogo.png" alt="logo" class="logo" /></a>
+            <ul>
+                <li><a href="./menu.html" class="active">Menu</a></li>
+                <li><a href="./about_us.html">About Us</a></li>
+                <li><a href="./promotion.html">Promotion</a></li>
+                <li><a href="./events.html">Event</a></li>
+                <li><a href="./Catering.html">Catering</a></li>
+                <li><a href="./career.html">Career Center</a></li>
+                <li id="ordernow"><a href="./ordernow.html"><strong>Order Now</strong></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <header class="catering">
+        <h1>Catering Services at Seven Cafe</h1>
+        <p>Check our availability for catering services below:</p>
+    </header>
+
+    <form name="bookingForm">
+        <label for="name">Name:</label>
+        <br>
+        <input type="text" id="name" autocomplete="off">
+        <br>
+        <label for="phoneNum">Phone Number:</label>
+        <br>
+        <input type="tel" id="phoneNum" autocomplete="off">
+        <br>
+        <label for="email">Email address:</label>
+        <br>
+        <input type="email" id="email" autocomplete="off">
+        <br>
+        <label for="home">Location:</label>
+        <br>
+        <input type="text" id="home">
+        <br>
+        <label for="time">Date and Time:</label>
+        <br>
+        <input type="date" id="date">
+        <br>
+        <input type="time" id="time">
+        <br>
+
+
+        <label for="category">Select the Food and Beverages you desire:</label>
+        <section id="category">
+            <div class="category">
+                <h3>Chops and Steaks</h3>
+                <section class="Category">
+                    <br>
+                    <div id="menu">
+                        <label for="Chop1">Crispy Chicken Chop</label>
+                        <input type="checkbox" id="Chop1">
+                        <input type="number" id="ChopNo1" min="0" disabled>
+                    </div>
+                    <br>
+                    <div id="menu">
+                        <label for="">Grilled Salmon Steak</label>
+                        <input type="checkbox" id="Chop2">
+                        <input type="number" id="ChopNo2" min="0" disabled>
+                    </div>
+                    <br>
+                    <div id="menu">
+                        <label for="">Juicy T-Bone Steak</label>
+                        <input type="checkbox" id="Chop3">
+                        <input type="number" id="ChopNo3" min="0" disabled>
+                    </div>
+                    <br>
+                    <div id="menu">
+                        <label for="">Rosemary Lamb Chop</label>
+                        <input type="checkbox" id="Chop4">
+                        <input type="number" id="ChopNo4" min="0" disabled>
+                    </div>
+                </section>
+            </div>
+            <div class="category">
+                <h3>Spaghetti</h3>
+                <section class="Category">
+                    <br>
+                    <div id="menu">
+                        <label for="">Bolognese</label>
+                        <input type="checkbox" id="Pasta1">
+                        <input type="number" id="PastaNo1" min="0" disabled>
+                    </div>
+                    <br>
+                    <div id="menu">
+                        <label for="">Carbonara</label>
+                        <input type="checkbox" id="Pasta2">
+                        <input type="number" id="PastaNo2" min="0" disabled>
+                    </div>
+                    <br>
+                    <div id="menu">
+                        <label for="">Mushroom Cream</label>
+                        <input type="checkbox" id="Pasta3">
+                        <input type="number" id="PastaNo3" min="0" disabled>
+                    </div>
+                    <br>
+                    <div id="menu">
+                        <label for="">Seafood Delight</label>
+                        <input type="checkbox" id="Pasta4">
+                        <input type="number" id="PastaNo4" min="0" disabled>
+                    </div>
+                </section>
+
+            </div>
+            <div class="category">
+                <h3>Beverages</h3>
+                <section class="Category">
+                    <br>
+                    <div id="menu">
+                        <label for="">Apple Juice</label>
+                        <input type="checkbox" id="Drink1">
+                        <input type="number" id="DrinkNo1" min="0" disabled>
+                    </div>
+                    <br>
+                    <div id="menu">
+                        <label for="">Orange Juice</label>
+                        <input type="checkbox" id="Drink2">
+                        <input type="number" id="DrinkNo2" min="0" disabled>
+                    </div>
+                    <br>
+                    <div id="menu">
+                        <label for="">Watermelon Juice</label>
+                        <input type="checkbox" id="Drink3">
+                        <input type="number" id="DrinkNo3" min="0" disabled>
+                    </div>
+                    <br>
+                    <div id="menu">
+                        <label for="">Lemon Tea</label>
+                        <input type="checkbox" id="Drink4">
+                        <input type="number" id="DrinkNo4" min="0" disabled>
+                    </div>
+                </section>
+
+            </div>
+            <div class="category">
+                <h3>Coffee</h3>
+                <section class="Category">
+                    <br>
+                    <div id="menu">
+                        <label for="">Americano</label>
+                        <input type="checkbox" id="Coffee1">
+                        <input type="number" id="CoffeeNo1" min="0" disabled>
+                    </div>
+                    <br>
+                    <div id="menu">
+                        <label for="">Cappuccino</label>
+                        <input type="checkbox" id="Coffee2">
+                        <input type="number" id="CoffeeNo2" min="0" disabled>
+                    </div>
+                    <br>
+                    <div id="menu">
+                        <label for="">Latte</label>
+                        <input type="checkbox" id="Coffee3">
+                        <input type="number" id="CoffeeNo3" min="0" disabled>
+                    </div>
+                    <br>
+                    <div id="menu">
+                        <label for="">Mocha</label>
+                        <input type="checkbox" id="Coffee4">
+                        <input type="number" id="CoffeeNo4" min="0" disabled>
+                    </div>
+                </section>
+
+            </div>
+            <div class="category">
+                <h3>Desserts</h3>
+                <section class="Category">
+                    <br>
+                    <div id="menu">
+                        <label for="">Cheesecake</label>
+                        <input type="checkbox" id="Dessert1">
+                        <input type="number" id="DessertNo1" min="0" disabled>
+                    </div>
+                    <br>
+                    <div id="menu">
+                        <label for="">Chocolate Lave Cake</label>
+                        <input type="checkbox" id="Dessert2">
+                        <input type="number" id="DessertNo2" min="0" disabled>
+                    </div>
+                    <br>
+                    <div id="menu">
+                        <label for="">Fried ice cream</label>
+                        <input type="checkbox" id="Dessert3">
+                        <input type="number" id="DessertNo3" min="0" disabled>
+                    </div>
+                    <br>
+                    <div id="menu">
+                        <label for="">Fruit Tart</label>
+                        <input type="checkbox" id="Dessert4">
+                        <input type="number" id="DessertNo4" min="0" disabled>
+                    </div>
+                </section>
+
+
+            </div>
+        </section>
+
+        <br>
+        <label for="Allergies">Allergies or anything to exclude:</label>
+        <br>
+        <input type="text" id="Allergies">
+        <br>
+        <label for="AdditionalInfo">Additional Information:</label>
+        <br>
+        <input type="text" id="AdditionalInfo">
+        <br>
+
+        <div class="submit">
+            <input type="button" id="Book" value="Book Catering" onclick="checkform()">
+        </div>
+    </form>
+
+    <!-- footer -->
+    <footer>
+        <div class="container-footer">
+
+            <div class="social">
+                <div class="ins">
+                    <a href="https://www.instagram.com/seven98627/">INS</a>
+                </div>
+
+                <div class="fb">
+                    <a href="https://www.facebook.com/profile.php?id=61551230584371">f</a>
+                </div>
+
+                <div class="email">
+                    <a href="Mailto:s.e.v.e.n.98627@gmail.com">&#9993;</a>
+                </div>
+
+                <div class="phoneno">
+                    <a href="tel:+601234567"> &#128222;</a>
+                </div>
+            </div>
+
+            <div class="links">
+                <div class="row1">
+                    <a href="./about_us.html">About Us</a>
+                    &nbsp;
+                    <a href="./promotion.html">Promotion</a>
+                    &nbsp;
+                    <a href="./Events.html">Events</a>
+                    &nbsp;
+                    <a href="./Catering.html">Catering</a>
+                </div>
+
+                <div class="row2">
+                    <a href="./Feedback.html">Feedback</a>
+                    &nbsp;
+                    <a href="./FAQ.html" style="color: rgb(255, 85, 85);">FAQ</a>
+                    &nbsp;
+                    <a href="./menu.html">Menu</a>
+                    &nbsp;
+                    <a href="./ordernow.html">Order Now</a>
+                    &nbsp;
+                    <a href="./Career.html">Career center</a>
+                </div>
+
+                <div class="row3">
+                    <a href="./homepage.html">- Back To Homepage -</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
